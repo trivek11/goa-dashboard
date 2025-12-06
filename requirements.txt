@@ -1,6 +1,4 @@
-dash==2.14.2
-pandas==2.2.2
-plotly==5.18.0
-openpyxl==3.1.2
-gunicorn==21.2.0
-
+pandas>=2.2.0
+dash>=2.14.0
+plotly>=5.18.0
+openpyxl>=3.1.0
