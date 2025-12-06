@@ -1,4 +1,4 @@
-dash>=2.17
-pandas
-plotly
-gunicorn
+echo "dash>=2.17" > requirements.txt
+echo "pandas" >> requirements.txt
+echo "plotly" >> requirements.txt
+echo "gunicorn" >> requirements.txt
