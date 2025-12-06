@@ -68,14 +68,14 @@ north_goa_wards = pd.concat([
 import os
 
 # For local development and deployment
-file_path = os.path.join(os.path.dirname(__file__), "South Goa.xlsx")
+file_path = os.path.join(os.path.dirname(__file__), "data", "South Goa.xlsx")
 
 # Or if you want to check multiple locations:
 if not os.path.exists(file_path):
     # Try alternative location
     file_path = "South Goa.xlsx"
     if not os.path.exists(file_path):
-        file_path = os.path.join("South Goa.xlsx")
+        file_path = os.path.join("data", "South Goa.xlsx")
 
 try:
     # Load Excel
@@ -603,4 +603,3 @@ server = app.server
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8050))
     app.run(host="0.0.0.0", port=port, debug=False)
-
